@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB3CFC"
+    android:orientation="vertical"
+    tools:context=".NumInputActivity"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/A3relativelayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#6F15FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/A3back_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_btn_foreground" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/A3text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/A3relativelayout"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textSize="30sp"
+        android:text="@string/A3string"
+        />
+
+    <EditText
+        android:id="@+id/A3editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/A3text"
+        android:inputType="number"
+        android:autofillHints="numbers"
+        tools:ignore="LabelFor" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/A3donebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/done"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="50dp"
+        app:srcCompat="@drawable/done_btn_foreground"
+        android:backgroundTint="@color/white"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

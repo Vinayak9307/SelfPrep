@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Self Prep</string>
+    <string name="exit_str">Exit</string>
+    <string name="done">done</string>
+    <string name="A3string">Please enter the desired number of test questions .</string>
+    <string name="textview">TextView</string>
+    <string name="download_images">Downloading Images \n Calculating Weightage \n Generating Paper</string>
+    <string name="question">question</string>
+</resources>
